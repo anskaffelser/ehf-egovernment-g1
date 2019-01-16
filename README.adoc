@@ -1,4 +1,4 @@
-= EHF Pre-Award (G2)
+= EHF eGovernment (G1)
 
 // Release date: *2018-11-15*
 
