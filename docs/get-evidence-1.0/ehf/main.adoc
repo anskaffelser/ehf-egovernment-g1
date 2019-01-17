@@ -25,6 +25,8 @@ include::use-cases/index.adoc[]
 
 include::request/index.adoc[]
 
+include::evidences/index.adoc[]
+
 include::datatypes/index.adoc[]
 
 include::codes/index.adoc[]

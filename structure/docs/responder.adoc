@@ -4,8 +4,13 @@ include::docs/get-evidence-1.0/settings.adoc[]
 
 The party responding to the request, i.e Altinn.
 
+The responder party is sent in the UBLExtensions element,
+
 .UBL example of responder
 [source, xml, indent=0]
 ----
 include::../{snippet-dir}/response-1.xml[tags=responder]
 ----
+<1> Identifier for the extension, must be `urn:fdc:difi.no:2017:vefa:getevidence:Responder-1`
+<2> Name of extension, must be `Responder information`
+<3> Extension content, i.e the party information

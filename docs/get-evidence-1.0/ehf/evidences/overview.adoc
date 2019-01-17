@@ -1,0 +1,93 @@
+
+= Overview of evidence codes
+
+The different evidence codes
+
+.Evidence codes and responses
+[cols="1,2,2,1"]
+|===
+|Evidence code
+3+|CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT
+.^|Response(s)
+|Registrert i Foretaksregisteret (J/N)
+|Indicator
+|true
+
+|Evidence code
+3+|CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP
+.2+.^|Response(s)
+|Registrert i Enhetsregisteret - Dato
+|Date
+|1995-02-19
+|Leverandørens etableringsdato
+|Date
+|1983-09-01
+
+|Evidence code
+3+|CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES
+.^|Response
+3+|Her kommer SKD-feltene
+
+|Evidence code
+3+|CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF
+.^|Response
+|Antall ansatte
+|Numeric
+|123
+
+|Evidence code
+3+|CRITERION.EXCLUSION.BUSINESS.INSOLVENCY
+.^|Response
+|Under avvikling - Frivillig (J/N)
+|Indicator
+|false
+
+|Evidence code
+3+|CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY
+.^|Response
+|Under konkursbehandling (J/N)
+|Indicator
+|false
+
+|===
+
+|Evidence code
+3+|CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY
+| Årsregnskap for periode angitt i requesten
+|Hvilket år var siste året selskapet leverte regnskap?	Year1	Numeric	2017
+URL til PDF for siste året	Year1PdfUrl	String	http://urltilpdfforaar2017
+Hvilket år var det nest siste året selskapet leverte regnskap?	Year2	Numeric	2016
+URL til PDF for det nest siste året	Year2PdfUrl	String	http://urltilpdfforaar2016
+Hvilket år var det tredje siste året selskapet leverte regnskap?	Year3	Numeric	2014	Merk at det kan være "hull"
+URL til PDF for det tredje siste året	Year3PdfUrl	String	http://urltilpdfforaar2014
+Hvilket år var det fjerde siste året selskapet leverte regnskap?	Year4	Numeric	2013
+URL til PDF for det fjerde siste året	Year4PdfUrl	String	http://urltilpdfforaar2013
+Hvilket år var det femte siste året selskapet leverte regnskap?	Year5	Numeric	2012
+URL til PDF for det femte siste året	Year5PdfUrl	String	http://urltilpdfforaar2012
+
+|UNIT_BASIC_INFORMATION
+|Organisasjonsnummer	OrganizationNumber	Numeric	934382404	Registrert i et foretaksregister
+Navn/foretaksnavn	OrganizationName	String	EVRY ASA	Registrert i et foretaksregister
+Organisasjonsform	OrganizationForm	String	ASA	Registrert i et foretaksregister
+Næringskode 1	IndustryCode1	String	62.030	Registrert i et foretaksregister
+Næringskode 1 - Beskrivelse	IndustryCode1Description	String	Forvaltning og drift av IT-systemer	Registrert i et foretaksregister
+Næringskode 2	IndustryCode2	String	70.100	Registrert i et foretaksregister
+Næringskode 2 - Beskrivelse	IndustryCode2Description	String	Hovedkontortjenester	Registrert i et foretaksregister
+Næringskode 3	IndustryCode3	String		Registrert i et foretaksregister
+Næringskode 3 - Beskrivelse	IndustryCode3Description	String		Registrert i et foretaksregister
+Forretningsadresse-gate	BusinessAddressStreet	String	Snarøyveien 30A	Registrert i et foretaksregister
+Forretningsadresse-postnummer	BusinessAddressZip	String	1360	Registrert i et foretaksregister
+Forretningsadresse-poststed	BusinessAddressCity	String	FORNEBU	Registrert i et foretaksregister
+Postadresse	PostalAddressStreet	String	Postboks 4	Registrert i et foretaksregister
+Postadresse- postnummer	PostalAddressZip	String	1330	Registrert i et foretaksregister
+Postadresse- poststed	PostalAddressCity	String	BÆRUM	Registrert i et foretaksregister
+Postadresse- land	PostalAddressCountryCode	String	NO	Registrert i et foretaksregister
+Registrert i Enhetsregisteret - Dato	CreatedInCentralRegisterForLegalEntities	Date	1995-02-19	Leverandørens etableringsdato
+Stiftelsesdato	Established	Date	1983-09-01	Leverandørens etableringsdato
+Registrert i Foretaksregisteret (J/N)	IsInRegistryOfBusinessEnterprises	Indicator	true	Registrert i et foretaksregister
+Registrert i MVA-registeret (J/N)	IsInValueAddedTaxRegistry	Indicator	true	Siw: Denne hører egentlig til kriteriet for betalte skatter og avgifter
+Sist innsendte årsregnskap (År)	LatestAnnualFinancialReport	Numeric	2017	Usikker på hvilket kriterie denne skal kobles opp mot? Siw: Denne bør kanskje knyttes som "tilleggsinfo" ved forespørsel om ulike årlige omsetninger, for kun å angi at siste år f.eks. er 2017.
+Antall ansatte 	NumberOfEmployees	Numeric	0	Gjennomsnittlige årlige arbeidsstyrke - Bjørn: Er det mulig å få dette tallet over mer enn inneværende år, for eks de siste tre år? Hilde: Nei
+Under avvikling - Frivillig (J/N)	IsBeingDissolved	Indicator	false	Siw: Jeg har knyttet inn kriteriet "..gjenstand for insolvensbehandling eller under avvikling…" eller bør vi heller gå for bankrupcy her også? Gjelder også Tvangsavvikling.  Siw: Høres riktigere ut med insolvens enn konkurs
+Under konkursbehandling (J/N)	IsUnderBankruptcy	Indicator	false	Konkurs
+Under tvangsavvikling eller tvangsoppløsning (J/N)	IsBeingForciblyDissolved	Indicator	false	Siw: Jeg har knyttet inn kriteriet "..gjenstand for insolvensbehandling eller under avvikling…" eller bør vi heller gå for bankrupcy her også? Gjelder også Frivillig avvikling. Siw: Høres riktigere ut med insolvens enn konkurs

@@ -11,9 +11,9 @@
     <!-- tag::responder[] -->
     <ext:UBLExtensions>
         <ext:UBLExtension>
-            <cbc:ID>urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</cbc:ID>
-            <cbc:Name>Responder information</cbc:Name>
-            <ext:ExtensionContent>
+            <cbc:ID>urn:fdc:difi.no:2017:vefa:getevidence:Responder-1</cbc:ID><!--1-->
+            <cbc:Name>Responder information</cbc:Name><!--2-->
+            <ext:ExtensionContent><!--3-->
                 <resp:ResponderParty>
                     <resp:EndpointID schemeID="0192">991825827</resp:EndpointID>
                     <resp:PartyIdentification>

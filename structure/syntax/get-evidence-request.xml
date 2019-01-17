@@ -84,28 +84,27 @@
 
             <Element>
                 <Term>cac:TenderingCriterionPropertyGroup</Term>
-                <Name>Tendering criterion property group</Name>
+                <Name>Criterion group element</Name>
 
                 <Element cardinality="1..n">
                     <Term>cac:TenderingCriterionProperty</Term>
-                    <Name>Tendering criterion property</Name>
+                    <Name>Requested evidence</Name>
+                    <Description>The element must be repeated pr evidence code</Description>
 
                     <Element cardinality="0..1">
                         <Term>cbc:ID</Term>
                         <Name>Requested evidence identifier</Name>
                         <Description>The identifier of the evidence requested, often a sequential number. The identifier must be unique within each request</Description>
                         <DataType>Identifier</DataType>
-                        <!-- Add rule -->
+                        <Reference type="RULE">EHF-GE-R041</Reference>
                         <Value type="EXAMPLE">1</Value>
                     </Element>
                     <Element>
                         <Term>cbc:TypeCode</Term>
                         <Name>Requested evidence type code</Name>
-                        <Description>The code of evidence requested. The code list is not yet available, will be published when list is ready.</Description>
+                        <Description>The code of evidence requested</Description>
                         <DataType>Code</DataType>
-                        <Reference type="CODE_LIST">evidence</Reference>
-                        
-                        
+                        <Reference type="CODE_LIST">evidence</Reference> 
                         <Value type="EXAMPLE">CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</Value>
                     </Element>
                     
@@ -136,7 +135,7 @@
                         <Value type="EXAMPLE">10</Value>
                     </Element>
                     
-                    <Element cardinality="0..1">
+                    <Element cardinality="0..n">
                         <Term>cac:ApplicablePeriod</Term>
                         <Name>Requested evidence period</Name>
                         <Description>Requested evidence period is used to specify dates (start and end date) or durations for the requested evidences. To indicate the last three years, use duration, if you request specific years/periods, use start and end date</Description>

@@ -22,8 +22,9 @@
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
+                    <Description>For Norwegian parties, value must be 0192</Description>
                     <Reference type="CODE_LIST">ICD</Reference>
-                    <Value type="FIXED">0192</Value>
+                    <Value type="EXAMPLE">0192</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">999999956</Value>

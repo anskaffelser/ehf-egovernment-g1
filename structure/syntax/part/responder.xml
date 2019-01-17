@@ -5,6 +5,7 @@
     
     <Element>
         <Term>ext:UBLExtension</Term>
+        <Name>Responder party information</Name>
        
         
         <Element>
@@ -23,22 +24,25 @@
         
         <Element>
             <Term>ext:ExtensionContent</Term>
+            <Name>Extension content, containing the responder party info</Name>
             
             <Element>
                 <Term>resp:ResponderParty</Term>
-                <Description>The party that has to respond to the request</Description>
+                <Name>Responder party</Name>
+                <Description>The party that has to respond to the request, i.e Altinn</Description>
                 
                 
                 <Element>
                     <Term>resp:EndpointID</Term>
                     <Name>Responder party electronic address</Name>
-                    <Description>The electronic address for the responder party</Description>
+                    <Description>The electronic address for the responder party, must be the electronic address for Altinn</Description>
                     <DataType>Identifier</DataType>
                     <Attribute>
                         <Term>schemeID</Term>
                         <Name>Scheme identifier</Name>
+                        <Description>For Norwegian use, value must be 0192</Description>
                         <Reference type="CODE_LIST">EAS</Reference>
-                        <Value type="EXAMPLE">0192</Value>
+                        <Value type="FIXED">0192</Value>
                     </Attribute>
                     <Value type="EXAMPLE">998877654</Value>
                     
@@ -51,12 +55,13 @@
                     <Element>
                         <Term>resp:ID</Term>
                         <Name>Responder party identifier</Name>
-                        <Description>Valid organizational number for the responding party</Description>
+                        <Description>Valid organizational number for the responding party, i.e Altinn</Description>
                         <DataType>Identifier</DataType>
                         
                         <Attribute usage="Optional">
                             <Term>schemeID</Term>
                             <Name>Scheme identifier</Name>
+                            <Description>For Norwegian use, value must be 0192</Description>
                             <Reference type="CODE_LIST">ICD</Reference>
                             <Value type="FIXED">0192</Value>
                         </Attribute>

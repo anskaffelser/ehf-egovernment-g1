@@ -15,9 +15,11 @@
         <Name>Contracting party electronic address</Name>
         <Description>The electronic address for the contracting authority</Description>
         <DataType>Identifier</DataType>
+        
         <Attribute>
             <Term>schemeID</Term>
             <Name>Scheme identifier</Name>
+            <Description>For Norwegian parties, value must be 0192</Description>
             <Reference type="CODE_LIST">EAS</Reference>
             <Value type="EXAMPLE">0192</Value>
         </Attribute>
@@ -38,8 +40,9 @@
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
                     <Name>Scheme identifier</Name>
+                    <Description>For Norwegian parties, value must be 0192</Description>
                     <Reference type="CODE_LIST">ICD</Reference>
-                    <Value type="FIXED">0192</Value>
+                    <Value type="EXAMPLE">0192</Value>
                 </Attribute>
 
                 <Value type="EXAMPLE">991825827</Value>

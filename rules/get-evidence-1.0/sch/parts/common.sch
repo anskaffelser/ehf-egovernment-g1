@@ -35,7 +35,7 @@
     <rule context="cac:ApplicablePeriod">
       <assert id="EHF-GE-R031"
         test="(exists(cbc:EndDate) and exists(cbc:StartDate) and (cbc:EndDate) &gt;= (cbc:StartDate)) or not(exists(cbc:StartDate)) or not(exists(cbc:EndDate))"
-        flag="fatal">If both period start date and period end date are given then the end date shall be later or equal to the start date.</assert>
+        flag="fatal">The end date shall be later or equal to the start date.</assert>
     </rule>
     
   </pattern>
