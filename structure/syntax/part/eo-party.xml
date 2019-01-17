@@ -18,6 +18,7 @@
                 <Description>Valid organizational number for the party whom the evidence is
                     requested</Description>
                 <DataType>Identifier</DataType>
+                <Reference type="RULE">EHF-GE-R010</Reference>
 
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
@@ -44,6 +45,9 @@
                 <Value type="EXAMPLE">TenderCompany AS</Value>
             </Element>
         </Element>
+        
+        <Include>contact.xml</Include>
+        
     </Element>
 
 </Element>

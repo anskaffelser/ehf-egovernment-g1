@@ -1,0 +1,29 @@
+<Element xmlns="urn:fdc:difi.no:2017:vefa:structure-1" cardinality="0..1">
+    
+        <Term>cac:Contact</Term>
+        <Name>Contact person</Name>
+        <Description>A group of business terms providing contact information.</Description>
+        <Property key="doc">structure/docs/contact.adoc</Property>
+        
+        <Element cardinality="0..1">
+            <Term>cbc:Name</Term>
+            <Name>Contact point</Name>
+            <Description>A contact point for a legal entity or person, might be an id or a name</Description>      
+            <DataType>Text</DataType>
+            <Value type="EXAMPLE">xyz123</Value>
+        </Element>
+        <Element cardinality="0..1">
+            <Term>cbc:Telephone</Term>
+            <Name>Contact telephone number</Name>
+            <Description>A phone number for the contact point.</Description>
+            <DataType>Text</DataType>
+            <Value type="EXAMPLE">887 654 321</Value>
+        </Element>
+        <Element cardinality="0..1">
+            <Term>cbc:ElectronicMail</Term>
+            <Name>Contact email address</Name>
+            <Description>An e-mail address for the contact point.</Description>
+            <DataType>Text</DataType>
+            <Value type="EXAMPLE">test.name@foo.bar</Value>
+        </Element>
+    </Element>

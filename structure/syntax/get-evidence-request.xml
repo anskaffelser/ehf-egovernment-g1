@@ -68,12 +68,46 @@
             <Name>Issue date</Name>
             <Description>The date, assigned by the sender, on which this document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
             <DataType>Date</DataType>
+            <Reference type="RULE">EHF-GE-R030</Reference>
             <Value type="EXAMPLE">2017-12-26</Value>
         </Element>
 
         <Include>part/contracting-party.xml</Include>
 
         <Include>part/eo-party.xml</Include>
+        
+        <Element cardinality="0..1">
+            <Term>cac:ProcurementProject</Term>
+           <Name>Requested consent validity period</Name>
+           <Description>The requested validity period for the consent of the economic operator. The consent and the validity period of the consent is handled by Altinn, and can, at any time be withdrawn by the economic operator. 
+               The period stated here is the period the contracting authority asks for the consent to be valid.</Description>
+            
+            <Element>
+                <Term>cac:PlannedPeriod</Term>
+                <Name>Consent period</Name>
+                
+                <Element>
+                    <Term>cbc:StartDate</Term>
+                    <Name>Start date</Name>
+                    <Description>Start date of the requested consent period, must be earlier than or equal to the end date. Must not include timezone information. Format YYYY-MM-DD</Description>
+                    <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-GE-R030</Reference>
+                    <Reference type="RULE">EHF-GE-R031</Reference>
+                    <Value type="EXAMPLE">2018-12-01</Value>
+                </Element>
+                
+                <Element>
+                    <Term>cbc:EndDate</Term>
+                    <Name>End date</Name>
+                    <Description>End date of the requested consent period, must be later than or equal to the start date. Must not include timezone information. Format YYYY-MM-DD</Description>
+                    <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-GE-R030</Reference>
+                    <Reference type="RULE">EHF-GE-R031</Reference>
+                    <Value type="EXAMPLE">2019-05-01</Value>
+                </Element>
+            </Element>
+         
+        </Element>
 
         <Element>
             <Term>cac:TenderingCriterion</Term>
@@ -147,6 +181,9 @@
                             <Name>Start date</Name>
                             <Description>Start date of the requested period for the evidence. Format YYYY-MM-DD</Description>
                             <DataType>Date</DataType>
+                            <Reference type="RULE">EHF-GE-R030</Reference>
+                            <Reference type="RULE">EHF-GE-R031</Reference>
+                            <Reference type="RULE">EHF-GE-R042</Reference>
                             <Value type="EXAMPLE">2017-12-26</Value>
                         </Element>
                         
@@ -155,6 +192,9 @@
                             <Name>End date</Name>
                             <Description>End date of the requested period for the evidence. End date must be the same, or later than the start date. Format YYYY-MM-DD</Description>
                             <DataType>Date</DataType>
+                            <Reference type="RULE">EHF-GE-R030</Reference>
+                            <Reference type="RULE">EHF-GE-R031</Reference>
+                            <Reference type="RULE">EHF-GE-R042</Reference>
                             <Value type="EXAMPLE">2018-12-26</Value>
                         </Element>
                         

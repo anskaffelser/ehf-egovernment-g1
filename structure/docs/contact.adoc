@@ -1,0 +1,11 @@
+include::docs/get-evidence-1.0/settings.adoc[]
+
+= Contact information
+
+Contact point, telephone and e-mail address can be provided. Contact point is normally a contact identifier/reference or a full name.
+
+.UBL example of contact information
+[source, xml, indent=0]
+----
+include::../{snippet-dir}/request-1.xml[tags=contact]
+----

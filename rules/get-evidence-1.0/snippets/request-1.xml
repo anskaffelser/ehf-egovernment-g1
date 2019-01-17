@@ -38,6 +38,13 @@
             <cac:PartyName>
                 <cbc:Name>Difi</cbc:Name>
             </cac:PartyName>
+            <!-- tag::contact[] -->
+            <cac:Contact>
+                <cbc:Name>Ole Olsen</cbc:Name>
+                <cbc:Telephone>987654321</cbc:Telephone>
+                <cbc:ElectronicMail>foo@bar.no</cbc:ElectronicMail>
+            </cac:Contact>
+            <!-- end::contact[] -->
         </cac:Party>
     </cac:ContractingParty>
     <cac:EconomicOperatorParty>

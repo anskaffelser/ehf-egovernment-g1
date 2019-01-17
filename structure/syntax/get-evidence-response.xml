@@ -68,6 +68,7 @@
             <Name>Issue date</Name>
             <Description>The date, assigned by the sender, on which this document was issued. Must not include timezone information. Format YYYY-MM-DD</Description>
             <DataType>Date</DataType>
+            <Reference type="RULE">EHF-GE-R030</Reference>
             <Value type="EXAMPLE">2017-12-26</Value>
         </Element>
 
@@ -277,14 +278,18 @@
                     <Name>Start date</Name>
                     <Description>Start date of the applicable period for the provided evidence. Format YYYY-MM-DD</Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-GE-R030</Reference>
+                    <Reference type="RULE">EHF-GE-R031</Reference>
                     <Value type="EXAMPLE">2017-12-26</Value>
                 </Element>
 
-                <Element cardinality="0..1">
+                <Element>
                     <Term>cbc:EndDate</Term>
                     <Name>End date</Name>
                     <Description>End date of the applicable period for the provided evidence. End date must be the same, or later than the start date. Format YYYY-MM-DD</Description>
                     <DataType>Date</DataType>
+                    <Reference type="RULE">EHF-GE-R030</Reference>
+                    <Reference type="RULE">EHF-GE-R031</Reference>
                     <Value type="EXAMPLE">2018-12-26</Value>
                 </Element>
                 

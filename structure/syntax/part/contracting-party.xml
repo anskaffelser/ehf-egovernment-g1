@@ -4,8 +4,6 @@
     <Description>The party requesting the evidence, normally the contracting authority in a procurement procedure</Description>
     <Property key="doc">structure/docs/ca.adoc</Property>
     
-<!--    <Property key="doc">structure/docs/contracting-party.adoc</Property>-->
-    
     <Element>
         <Term>cac:Party</Term>
         <Name>Party information</Name>
@@ -15,6 +13,7 @@
         <Name>Contracting party electronic address</Name>
         <Description>The electronic address for the contracting authority</Description>
         <DataType>Identifier</DataType>
+        <Reference type="RULE">EHF-GE-R010</Reference>
         
         <Attribute>
             <Term>schemeID</Term>
@@ -36,6 +35,7 @@
                 <Name>Contracting party identifier</Name>
                 <Description>The identifier of the contracting party, as it is legally registered</Description>
                 <DataType>Identifier</DataType>
+                <Reference type="RULE">EHF-GE-R011</Reference>
 
                 <Attribute usage="Optional">
                     <Term>schemeID</Term>
@@ -61,7 +61,8 @@
                 <Value type="EXAMPLE">Difi</Value>
             </Element>
         </Element>
-
+        
+        <Include>contact.xml</Include>
   
     </Element>
 

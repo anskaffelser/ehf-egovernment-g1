@@ -1,9 +1,0 @@
-include::docs/qualification-1.0/settings.adoc[]
-
-= Document Response
-
-.UBL example of document response
-[source, xml, indent=0]
-----
-include::../{snippet-dir-q}/QualificationResponse.xml[tags=DocumentResponse-Res]
-----
