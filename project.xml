@@ -40,18 +40,14 @@
         <Title>Empty elements</Title>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
-    <!-- <Resource>
+   <Resource>
         <Identifier>ge-request</Identifier>
         <Type>native:Schematron</Type>
-        <Path>rules/get-evidence-1.0/sch/EHF-GE-REQUEST.sch</Path>
+       <Path>rules/get-evidence-1.0/sch/parts/EHF-GE-REQUEST-M.sch</Path>
+       <Title>Business rules for Get Evidence request</Title>
         <Tag>get-evidence-1.0</Tag>
     </Resource>
-    <Resource>
-        <Identifier>ge-response</Identifier>
-        <Type>native:Schematron</Type>
-        <Path>rules/get-evidence-1.0/sch/EHF-GE-RESPONSE.sch</Path>
-        <Tag>get-evidence-1.0</Tag>
-    </Resource> -->
+
 
     <!-- Files -->
     <Resource>
