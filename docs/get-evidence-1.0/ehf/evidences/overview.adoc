@@ -3,7 +3,9 @@
 = Overview of evidences
 
 The evidence codes (exept one - UNIT_BASIC_INFORMATION) are identical to the alpha criterion codes used in the ESPD. The value in the column Response Value, will be sent in the GetEvidence Response in the element `cac:ResponseValue/cbc:ID`.
-The element `cac:ResponseValue`  contains a set of two elements to provide one response value. A `cbc:ID`element to indicate what the response value is,
+
+
+The element `cac:ResponseValue`  contains a set of two elements to provide one response value. A `cbc:ID` element to indicate what the response value is,
 and an element containing the actual evidence/response value.
 
 This element differ based on the data type of the response value:
@@ -15,8 +17,10 @@ Data type Numeric:: will be sent in `cbc:ResponseNumeric`
 Data type Indicator:: will be sent in `cbc:ResponseIndicator`
 Data type URI:: will be sent in `cbc:ResponseURI`
 
-NOTE: Several codes will give more than one single response value.
-
+[IMPORTANT]
+====
+Several codes will give more than one single response value, and the combination of the different response values is seen as the evidence.
+====
 
 .Evidence codes and responses
 [cols="3,3,2,2", options="header"]
@@ -27,12 +31,14 @@ NOTE: Several codes will give more than one single response value.
 |Data type
 |Example
 
-h|CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT
+h|CRITERION.SELECTION.SUITABILITY. +
+TRADE_REGISTER_ENROLMENT
 |IsInRegistryOfBusinessEnterprises
 |Indicator
 |true
 
-.2+.^h|CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP
+.2+.^h|CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING. +
+TURNOVER.SET_UP
 |CreatedInCentralRegisterForLegalEntities
 |Date
 |1995-02-19
@@ -40,7 +46,8 @@ h|CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT
 |Date
 |1983-09-01
 
-.12+.^h|CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES
+.12+.^h|CRITERION.EXCLUSION.CONTRIBUTIONS. +
+PAYMENT_OF_TAXES
 
 |SkattForfaltOgUbetalt
 |Numeric
@@ -91,7 +98,8 @@ h|CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT
 |2000
 
 
-.2+.^h|CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF
+.2+.^h|CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY. +
+MANAGEMENT.MANAGERIAL_STAFF
 |NumberOfEmployees
 |Numeric
 |123
@@ -112,7 +120,8 @@ h|CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY
 |Indicator
 |false
 
-.2+.^h|CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY
+.2+.^h|CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING. +
+TURNOVER.GENERAL_YEARLY
 |Year1 - Year5
 |Numeric
 |2017
