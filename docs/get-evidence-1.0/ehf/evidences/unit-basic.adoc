@@ -1,0 +1,25 @@
+= Unit basic information
+
+This evidence code is not directly connected to the criteria codes, and will give you basic information for the unit you request info on.
+
+To get the unit basic information a GetEvidence request containing the code `UNIT_BASIC_INFORMATION`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of unit basic information
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=unit]
+----
+<1> Evidence code requested
+
+
+This evidence code will give you at most 16 different response values back, see <<evidences>> for more detailed information. The example below does not contain all 16 possible values.
+
+.GetEvidence Response example of unit basic information
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=unit]
+----
+<1> The evidence code as requested
+<2> Response value identifier from code list
+<3> The evidence value

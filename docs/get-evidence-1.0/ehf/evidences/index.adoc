@@ -1,12 +1,28 @@
 
-= How to request different evidences and their expected response
+= How to request different evidences and their expected response values
 
 
-In the following sub-chapters you will find explanations and examples for the valid evidence-codes,
+In the following sub-chapters you will find an overview as well as detailed explanations and examples for the valid evidence-codes,
 how to fill a request and what response is expected for the different evidences.
 
 :leveloffset: +1
 
 include::overview.adoc[]
+
+include::trade-register.adoc[]
+
+include::unit-basic.adoc[]
+
+include::staff.adoc[]
+
+include::general-turnover.adoc[]
+
+include::set-up.adoc[]
+
+include::insolvency.adoc[]
+
+include::bankrupt.adoc[]
+
+include::taxes.adoc[]
 
 :leveloffset: -1

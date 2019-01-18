@@ -1,0 +1,23 @@
+= Enrollment in a trade register
+
+To request evidence of enrollment in a trade register a GetEvidence request must be sent, containing the code `CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of enrollment in trade register
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=trade-reg]
+----
+<1> Evidence code requested
+
+
+As the evidence for this code is an indicator, it can have the value *true* or *false*. True meaning the economic operator is enrolled in a trade register, false meaning they are not.
+
+.GetEvidence Response example of enrollment in trade register
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=trade-reg]
+----
+<1> The evidence code as requested
+<2> Response value identifier from code list
+<3> The evidence value

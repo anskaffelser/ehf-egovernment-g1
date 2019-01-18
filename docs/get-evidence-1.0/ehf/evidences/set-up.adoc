@@ -1,0 +1,23 @@
+= Date of establishment and registration in business registry
+
+To request evidence of enrollment in a trade register a GetEvidence request must be sent, containing the code `CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of date of establishment and registration in business registry
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=set-up]
+----
+<1> Evidence code requested
+
+
+The evidence for this code is two response values, the date of establishment and the date of registration.
+
+.GetEvidence Response example of date of establishment and registration in business registry
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=set-up]
+----
+<1> The evidence code as requested
+<2> Response value date of registration
+<3> Response value date of establishment

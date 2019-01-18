@@ -1,0 +1,23 @@
+= Is the economic operator the subject of insolvency or winding-up
+
+To request evidence of insolvency a GetEvidence request must be sent, containing the code `CRITERION.EXCLUSION.BUSINESS.INSOLVENCY`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of insolvency
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=insolvency]
+----
+<1> Evidence code requested
+
+
+The evidence for this code is two response values both indicators (true/false)
+if the organization is being dissolved and if it is being forcibly dissolved.
+
+.GetEvidence Response example of insolvency
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=insolvency]
+----
+<1> Response value indicating the organization is not being dissolved.
+<2> Response value indicating the organization is not being forcibly dissolved

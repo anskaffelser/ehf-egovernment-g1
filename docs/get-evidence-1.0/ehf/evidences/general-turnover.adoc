@@ -1,0 +1,25 @@
+= General yearly turnover
+
+To request evidence of the general yearly turnover a GetEvidence request must be sent, containing the code `CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty`. The requested number of years (1,3 or 5) must be indicated in the `cac:ApplicablePeriod`.
+
+.GetEvidence Request example of general yearly turnover
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=general-turnover]
+----
+<1> Evidence code requested
+
+
+This evidence code will return two response values per year requested one value indicating which year, one response value with the URI for the PDF for the year.
+
+.GetEvidence Response example of general yearly turnover
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=general-turnover]
+----
+<1> Indication of year1
+<2> The year
+<3> Indicating URL for the pdf for year 1
+<4> The URI to the pdf.
+<5> Note that there might be gaps in the years

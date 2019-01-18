@@ -1,0 +1,24 @@
+= Number of managerial staff
+
+To request evidence of the number of managerial staff a GetEvidence request must be sent, containing the code `CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of managerial staff
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=staff]
+----
+<1> Evidence code requested
+
+
+This evidence code will return two response values, the number of staff and the certificate of registration.
+
+.GetEvidence Response example of managerial staff
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=staff]
+----
+<1> The evidence code as requested
+<2> Response value identifier from code list
+<3> The evidence value
+<4> The url to the certificate

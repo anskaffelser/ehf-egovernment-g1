@@ -38,11 +38,6 @@
             <cac:PartyName>
                 <cbc:Name>Difi</cbc:Name>
             </cac:PartyName>
-            <cac:Contact>
-                <cbc:Name>abc1234</cbc:Name>
-                <cbc:Telephone>923487239847</cbc:Telephone>
-                <cbc:ElectronicMail>foo@bar.no</cbc:ElectronicMail>
-            </cac:Contact>
         </cac:Party>
     </cac:ContractingParty>
     <cac:EconomicOperatorParty>
@@ -53,58 +48,63 @@
             <cac:PartyName>
                 <cbc:Name>TenderCompany AS</cbc:Name>
             </cac:PartyName>
-            <cac:Contact>
-                <cbc:Name>abc1234</cbc:Name>
-                <cbc:Telephone>923487239847</cbc:Telephone>
-                <cbc:ElectronicMail>foo@bar.no</cbc:ElectronicMail>
-            </cac:Contact>
         </cac:Party>
     </cac:EconomicOperatorParty>
-    <cac:ProcurementProject>
-        <cac:PlannedPeriod>
-            <cbc:StartDate>2019-01-01</cbc:StartDate>
-            <cbc:EndDate>2020-12-31</cbc:EndDate>
-        </cac:PlannedPeriod>
-    </cac:ProcurementProject>
     <cac:TenderingCriterion>
         <cac:TenderingCriterionPropertyGroup>
-        
+            <!-- tag::unit[] -->
             <cac:TenderingCriterionProperty>
                     <cbc:ID>1</cbc:ID>
-                    <cbc:TypeCode>UNIT_BASIC_INFORMATION</cbc:TypeCode>
+                <cbc:TypeCode>UNIT_BASIC_INFORMATION</cbc:TypeCode><!--1-->
             </cac:TenderingCriterionProperty>
-        
+            <!-- end::unit[] -->
+            <!-- tag::staff[] -->
             <cac:TenderingCriterionProperty>
                 <cbc:ID>2</cbc:ID>
-                <cbc:TypeCode>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF</cbc:TypeCode>
+                <cbc:TypeCode>CRITERION.SELECTION.TECHNICAL_PROFESSIONAL_ABILITY.MANAGEMENT.MANAGERIAL_STAFF
+                </cbc:TypeCode><!--1-->
             </cac:TenderingCriterionProperty>
+            <!-- end::staff[] -->
+            <!-- tag::general-turnover[] -->
             <cac:TenderingCriterionProperty>
                 <cbc:ID>3</cbc:ID>
-                <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode>
-                <cac:ApplicablePeriod>
-                    <cbc:DurationMeasure unitCode="ANN">5</cbc:DurationMeasure>
+                <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode> <!--1-->
+                <cac:ApplicablePeriod> 
+                    <cbc:DurationMeasure unitCode="ANN">5</cbc:DurationMeasure> <!--2-->
                 </cac:ApplicablePeriod>       
             </cac:TenderingCriterionProperty>
+            <!-- end::general-turnover[] -->
+            <!-- tag::set-up[] -->
             <cac:TenderingCriterionProperty>
                 <cbc:ID>4</cbc:ID>
-                <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP</cbc:TypeCode>
+                <cbc:TypeCode>CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.SET_UP</cbc:TypeCode> <!--1-->
             </cac:TenderingCriterionProperty>
+            <!-- end::set-up[] -->
+            <!-- tag::insolvency[] -->
             <cac:TenderingCriterionProperty>
                 <cbc:ID>5</cbc:ID>
-                <cbc:TypeCode>CRITERION.EXCLUSION.BUSINESS.INSOLVENCY</cbc:TypeCode>
+                <cbc:TypeCode>CRITERION.EXCLUSION.BUSINESS.INSOLVENCY</cbc:TypeCode> <!--1-->
             </cac:TenderingCriterionProperty>
+            <!-- end::insolvency[] -->
+            <!-- tag::bankrupt[] -->
             <cac:TenderingCriterionProperty>
                 <cbc:ID>6</cbc:ID>
-                <cbc:TypeCode>CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY</cbc:TypeCode>
+                <cbc:TypeCode>CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY</cbc:TypeCode> <!--1-->
             </cac:TenderingCriterionProperty>
+            <!-- end::bankrupt[] -->
+            <!-- tag::trade-reg[] -->
             <cac:TenderingCriterionProperty>
                 <cbc:ID>7</cbc:ID>
-                <cbc:TypeCode>CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT</cbc:TypeCode>
+                <cbc:TypeCode>CRITERION.SELECTION.SUITABILITY.TRADE_REGISTER_ENROLMENT
+                </cbc:TypeCode> <!--1-->
             </cac:TenderingCriterionProperty>
+            <!-- end::trade-reg[] -->
+            <!-- tag::taxes[] -->
                 <cac:TenderingCriterionProperty>
                     <cbc:ID>8</cbc:ID>
-                    <cbc:TypeCode>CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:TypeCode>
+                    <cbc:TypeCode>CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:TypeCode> <!--1-->
             </cac:TenderingCriterionProperty>
+            <!-- end::taxes[] -->
         </cac:TenderingCriterionPropertyGroup>
     </cac:TenderingCriterion>
   

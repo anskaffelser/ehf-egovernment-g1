@@ -7,7 +7,7 @@ include::../shared/links.adoc[]
 
 // Folders
 :rules-dir: /tmp/rules
-:snippet-dir: ../../../rules/get-evidence-1.0/snippets
+:snippets-dir: ../../../../rules/get-evidence-1.0/snippets
 
 //Internal
 

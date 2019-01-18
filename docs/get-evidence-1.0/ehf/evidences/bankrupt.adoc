@@ -1,0 +1,22 @@
+= Is the economic operator bankrupt
+
+To request evidence of bankruptcy a GetEvidence request must be sent, containing the code `CRITERION.EXCLUSION.BUSINESS.BANKRUPTCY`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of bankruptcy
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=bankrupt]
+----
+<1> Evidence code requested
+
+
+The evidence for this code is an indicator (true/false) stating
+if the organization is under bankruptcy,
+
+.GetEvidence Response example of bankruptcy
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=bankrupt]
+----
+<1> The evidence/response value

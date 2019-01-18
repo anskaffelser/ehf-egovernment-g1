@@ -1,0 +1,24 @@
+= Payment of taxes
+
+To request evidence of payment of taxes a GetEvidence request must be sent, containing the code `CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES`
+in the element `cbc:TypeCode` in the `cac:TenderingCriterionProperty` as shown below:
+
+.GetEvidence Request example of payment of taxes
+[source, xml, indent=0]
+----
+include::{snippets-dir}/request-full-snippet.xml[tags=taxes]
+----
+<1> Evidence code requested
+
+
+This evidence code will provide 10 response values, which together form the evidence indicating
+if the economic operator has breached its obligations relating to the payment of taxes. All response values provide the amount not paid, so the value 0 (zero) indicates
+no breach of obligations.
+
+.GetEvidence Response example of enrollment in trade register
+[source, xml, indent=0]
+----
+include::{snippets-dir}/response-full-snippet.xml[tags=taxes]
+----
+<1> Type of response value
+<2> Amount unpaid
