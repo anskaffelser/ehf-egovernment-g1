@@ -7,5 +7,5 @@ Contact point, telephone and e-mail address can be provided. Contact point is no
 .UBL example of contact information
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/request-1.xml[tags=contact]
+include::../{snippets-dir}/request-1.xml[tags=contact]
 ----

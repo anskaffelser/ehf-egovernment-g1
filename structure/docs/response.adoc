@@ -9,11 +9,11 @@ Response information is provided in the class TenderingCriterionResponse, which 
 .UBL example of a response on the number of managerial staff
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/response-1.xml[tags=response-staff]
+include::../{snippets-dir}/response-1.xml[tags=response-staff]
 ----
 
 .UBL example of a response on the criteria of payment of taxes
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/response-1.xml[tags=response-tax]
+include::../{snippets-dir}/response-1.xml[tags=response-tax]
 ----

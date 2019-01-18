@@ -7,5 +7,5 @@ The economic operator (EO) party is the party for whom the evidence(s) are valid
 .UBL example of economic operator party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/response-1.xml[tags=eo]
+include::../{snippets-dir}/response-1.xml[tags=eo]
 ----

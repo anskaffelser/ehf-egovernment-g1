@@ -9,17 +9,17 @@ Please note that to request supporting documents at criteria group or property l
 .UBL example of requesting open data about the economic operator
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/request-1.xml[tags=basic]
+include::../{snippets-dir}/request-1.xml[tags=basic]
 ----
 
 .UBL example of requesting supporting documents based on the criteria
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/request-1.xml[tags=criterion]
+include::../{snippets-dir}/request-1.xml[tags=criterion]
 ----
 
 .UBL example of requesting supporting documents based on the criteria property
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/request-1.xml[tags=property]
+include::../{snippets-dir}/request-1.xml[tags=property]
 ----

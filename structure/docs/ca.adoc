@@ -7,5 +7,5 @@ The contracting party is the party requesting the evidence(s), and is mandatory 
 .UBL example of contracting party
 [source, xml, indent=0]
 ----
-include::../{snippet-dir}/response-1.xml[tags=ca]
+include::../{snippets-dir}/response-1.xml[tags=ca]
 ----
