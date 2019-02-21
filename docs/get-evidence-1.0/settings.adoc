@@ -2,7 +2,7 @@
 include::../shared/links.adoc[]
 
 //
-:revision: 1.0.0
+:revision: 1.0.0 RC1
 :release: 2018.08.30
 
 // Folders
